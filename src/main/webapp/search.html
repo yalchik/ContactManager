@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Найти контакты</title>
+		<link rel="stylesheet" type="text/css" href="styles\contact.css">
+	</head>
+	<body>
+		<header>Найти контакты</header>
+		<form action="search.do" method="get">
+			<input type="hidden" name="start" value="0">
+			<input type="hidden" name="count" value="10">
+			<table class="form center">
+				<tr>
+					<td><label for="firstname">Имя</label></td>
+					<td><input type="text" name="firstname" id="firstname"></td>					
+				</tr>
+				<tr>
+					<td><label for="lastname">Фамилия</label></td>
+					<td><input type="text" name="lastname" id="lastname"></td>
+				</tr>
+				<tr>
+					<td><label for="midname">Отчество</label></td>
+					<td><input type="text" name="midname" id="midname"></td>
+				</tr>
+				<tr>
+					<td><label for="birthday">Дата рождения</label></td>
+					<td>
+						<select id="birthday_compare_sign" name="birthday_compare_sign">
+							<option value="=" selected>Равно</option>
+							<option value=">">Больше</option>
+							<option value="<">Меньше</option>
+							<option value=">=">Больше или равно</option>
+							<option value="<=">Меньше или равно</option>
+						</select>
+						<br>
+						<input type="date" name="birthday" id="birthday">
+					</td>
+				</tr>
+				<tr>
+					<td><label>Пол</label></td>
+					<td>
+						<input type="radio" name="sex" value="male" id="male">
+						<label for="male">Мужской</label>
+						<br>
+						<input type="radio" name="sex" value="female" id="female">
+						<label for="female">Женский</label>
+					</td>
+				</tr>
+				<tr>
+					<td><label for="citizenship">Гражданство</label></td>
+					<td><input type="text" name="citizenship" id="citizenship"></td>
+				</tr>
+				<tr>
+					<td><label>Семейное положение</label></td>
+					<td>
+						<input type="radio" name="marital_status" value="0" id="married">
+						<label for="married">Не женат\Не замужем</label>
+						<br>
+						<input type="radio" name="marital_status" value="1" id="single">
+						<label for="single">Женат\Замужем</label>
+					</td>
+				</tr>
+				<tr>
+					<td><label for="web-site">Web-сайт</label></td>
+					<td><input type="text" name="web-site" id="web-site"></td>
+				</tr>
+				<tr>
+					<td><label for="email">E-mail</label></td>
+					<td><input type="email" name="email" id="email"></td>
+				</tr>
+				<tr>
+					<td><label for="job">Текущее место работы</label></td>
+					<td><input type="text" name="job" id="job"></td>
+				</tr>
+				<tr>
+					<td><label for="country">Страна</label></td>
+					<td><input type="text" name="country" id="country"></td>
+				</tr>
+				<tr>
+					<td><label for="city">Город</label></td>
+					<td><input type="text" name="city" id="city"></td>
+				</tr>
+				<tr>
+					<td><label for="street">Улица</label></td>
+					<td><input type="text" name="street" id="street"></td>
+				</tr>
+				<tr>
+					<td><label for="house">Дом</label></td>
+					<td><input type="text" name="house" id="house"></td>
+				</tr>
+				<tr>
+					<td><label for="apartment">Квартира</label></td>
+					<td><input type="text" name="apartment" id="apartment"></td>
+				</tr>
+				<tr>
+					<td><label for="postcode">Почтовый индекс</label></td>
+					<td><input type="text" name="postcode" id="postcode"></td>
+				</tr>
+			</table>
+			<div class="result_buttons">
+				<input class="button red uppercase" type="submit" value="Найти">
+				<input class="button" type="reset" value="Очистить" onClick="window.location.href = 'index.do'">
+			</div>
+		</form>
+		<footer>© iTechArt Group, 2013</footer>
+	</body>
+</html>

@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Выбор фотографии</title>
+		<link rel="stylesheet" type="text/css" href="styles\popup.css">
+		<script type="text/javascript" src="scripts\common.js"> </script>
+		<script type="text/javascript" src="scripts\browse-handling.js"> </script>
+	</head>
+	<body>
+		<form action="photo.do" method="post" enctype="multipart/form-data">
+			<div>
+				<input type="file" name="photo" id="browse" class="invisible" onChange="Handlechange()" />
+				<input type="text" id="filename" readonly />
+				<input type="button" value="Найти" class="button" onClick="HandleBrowseClick()" />
+			</div>
+			<div class="result_buttons">
+				<input class="button red uppercase" type="submit" value="Сохранить"	>
+				<input class="button" type="reset" value="Отменить" onClick="window.close()">
+			</div>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,17 @@
+﻿@import "common.css";
+@import "buttons.css";
+
+td.fullname {
+  width: 30%;
+  font-weight:bold;
+  cursor: pointer;
+}
+td.birthday {
+  width: 10%
+}
+td.address {
+  width: 40%
+}
+td.job {
+  width: 20%
+}

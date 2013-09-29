@@ -1,0 +1,57 @@
+﻿label {
+	font-family:Arial, sans-serif;
+	font-size:0.8em;
+	font-weight:bold;	
+}
+header {
+	color: black;
+	font-family:Arial, sans-serif;
+	font-size:2em;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+footer {
+	color: grey;
+	font-family:Arial, sans-serif;
+	font-size:0.7em;
+	font-weight:lighter;
+	text-align: center;
+}
+
+table.list  {
+	border-collapse:collapse;
+	border-spacing:20px;	
+	font-family:Arial, sans-serif;    
+    font-size:0.8em;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 100%;		
+}
+table.list td {
+    border-bottom: 1px solid lightgrey;
+	padding:5px;
+}
+
+table.form td {
+    border-bottom: 0px;
+	padding:5px;
+}
+
+table.form td label {
+	font-weight:normal;	
+}
+
+.right {
+	float:right;
+}
+.uppercase {
+	text-transform: uppercase;
+}
+.center {
+	text-align: center;
+}
+.invisible {
+	display: none;
+}

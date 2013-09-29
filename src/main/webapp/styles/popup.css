@@ -1,0 +1,35 @@
+﻿@import "common.css";
+@import "buttons.css";
+
+table.form {
+	width: 100%;	
+}
+table.form td {
+    border-bottom: 0px;
+	padding:5px;
+}
+
+table.form td.label {
+	table-layout: auto;
+	text-align: right;
+}
+table.form td.form {
+	table-layout: auto;
+	text-align: left;
+}
+table.form td.comments{
+	width: 100%;
+}
+
+table.form td label {
+	font-weight:normal;
+	color: grey;
+}
+
+table.form td.form input[type="text"] {
+	width: 200px;
+}
+
+table.form td textarea {
+	width: 100%;
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+	<display-name>Contact</display-name>
+	<context-param>
+		<param-name>admin_email</param-name>
+		<param-value>yalchik.ilya@gmail.com</param-value>
+	</context-param>
+	<context-param>
+		<param-name>mailing_interval_seconds</param-name>
+		<param-value>86400</param-value><!-- 86400 seconds in a day -->
+	</context-param>
+	<context-param>
+		<param-name>mail.smtp.host</param-name>
+		<param-value>localhost</param-value>
+	</context-param>
+	<context-param>
+		<param-name>upload_path</param-name>
+		<param-value>D:\WEB-APPS\Contact\web-content\upload\</param-value>
+	</context-param>
+
+</web-app>
