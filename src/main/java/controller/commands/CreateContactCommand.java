@@ -15,8 +15,7 @@ import model.Contact;
  * Gets new contact and save it in DB with phones and attachments.
  * Removes session contact.
  * Redirects to default page.
- * @author Илья
- *
+ * @author Yalchyk Ilya
  */
 public class CreateContactCommand extends AbstractCommand {
 

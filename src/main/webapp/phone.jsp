@@ -1,4 +1,4 @@
-<%@ page import="model.Phone;" %>
+<%@ page import="model.Phone" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 
 <!DOCTYPE html>
@@ -13,7 +13,7 @@
 				var phone_id = parseGetParams()['phone_id'];
 				var hidden_id = document.getElementById("hidden_id");
 				var hidden_phone_id = document.getElementById("hidden_phone_id");
-				if (phone_id != undefined) {
+				if (phone_id !== undefined) {
 					hidden_phone_id.value = phone_id;
 				}
 				hidden_id.value = parseGetParams()['id'];

@@ -1,4 +1,4 @@
-<%@ page import="model.Attachment;" %>
+<%@ page import="model.Attachment" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 
 <!DOCTYPE html>
@@ -14,7 +14,7 @@
 				var attachment_id = parseGetParams()['attachment_id'];
 				var hidden_id = document.getElementById("hidden_id");
 				var hidden_attachment_id = document.getElementById("hidden_attachment_id");
-				if (attachment_id != undefined) {
+				if (attachment_id !== undefined) {
 					hidden_attachment_id.value = attachment_id;
 				}
 				hidden_id.value = parseGetParams()['id'];
